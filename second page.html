@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif; /* Set a common font family */
+        }
+
+        header {
+            font-size: 36px; /* Reduced font size for better fit */
+            text-align: center;
+            padding: 20px 0; /* Adjusted padding */
+
+        }
+
+        .party, .out, .trip, .sleep {
+            background-size: cover;
+            padding: 80px 50px; /* Adjusted padding for better alignment */
+            border-radius: 20px;
+            float: left;
+            margin-right: 20px;
+            text-align: center;
+            width: 500px;
+            height: 200px; /* Adjusted height for better display */
+            overflow: hidden; /* Prevent content overflow */
+        }
+
+        .party {
+            background-image: url('https://t3.ftcdn.net/jpg/02/43/51/84/240_F_243518440_ZEzt6dToj5apZxuXhJkfXdWWL9gyJyQi.jpg');
+        }
+
+        .out {
+            background-image: url('https://t4.ftcdn.net/jpg/08/30/30/99/240_F_830309913_HjJLrRaWZzFVN6vqF9Jmoxt1IqEa96t5.jpg');
+        }
+
+        .trip {
+            background-image: url('https://t4.ftcdn.net/jpg/07/14/64/67/240_F_714646778_Jx3eyUo6BLu7z6pPpOD7SyDfWD3zQEn5.jpg');
+        }
+
+        .sleep {
+            background-image: url('https://t4.ftcdn.net/jpg/04/30/28/39/240_F_430283992_aVvfDTHIGbNHDr6BvM2hgzzeXmqA7SOY.jpg');
+        }
+
+        h4 {
+            color: white;
+            font-size: 36px;
+            margin: 0;
+            line-height: 100px;
+        }
+        button {
+           display: block;
+           margin: 20px auto;
+           padding: 10px 20px;
+           font-size: 18px;
+           font-weight: bold;
+           text-transform: uppercase;
+            color: #fff;
+            background-color: #3498db;
+           border: 2px solid #3498db;
+           border-radius: 5px;
+           cursor: pointer;
+           text-decoration: none;
+           transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button:hover,
+button:focus {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: rotateX(20deg)
+}
+</style>
+</head>
+<body>
+    <header>Things you can do on Birthday</header>
+    <a href="party.html"><div class="party">
+       <h4>Have a Party</h4>
+    </div></a>
+    <a href="out.html"><div class="out">
+       <h4>Go Out</h4>
+    </div></a>
+    <a href="plan.html"><div style="clear: both;">
+        <br><br><br>
+    </div> <!-- Clear float to prevent layout issues -->
+     <a href="plan.html"><div class="trip">
+        <h4>set plans</h4>
+    </div></a>
+    <a href="sleep.html"><div class="sleep">
+       <h4>Sleep</h4>
+    </div></a>
+   <a href="last.html"><button> <h1>last option</h1></button> </a>
+</body>
+</html>
