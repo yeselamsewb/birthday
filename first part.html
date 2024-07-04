@@ -1,116 +1,82 @@
-<!doctype>
-<html>
-    <head>
-        <style>
-        body{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Celebration</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
             background-image: url('https://media.tenor.com/hO5LurgYddYAAAAi/party-balloons.gif');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
+            font-family: Arial, sans-serif; /* Common font for better compatibility */
         }
-        .main{
-            padding-top:150px;
-            animation-name: main;
-            animation-duration: 2.5s;
-            animation-fill-mode: forwards;
-            animation-delay: 0s;
-            animation-timing-function: ease-in-out;
+        .main {
+            padding-top: 10%;
+            text-align: center;
+            animation: main 2.5s ease-in-out forwards;
         }
-        .ballons{
-            width: 1200px;
-        }   
-        .cake{
-            padding-left: 150px;
-            padding-bottom:0px;
-            height:800px;
-            width:900px;
+        .cake {
+            width: 100%; /* Ensure the cake image takes full width */
+            max-width: 900px; /* Limit maximum width of the cake */
+            height: auto; /* Maintain aspect ratio */
+            animation: cake 2.5s ease-in-out forwards;
         }
-        h3{
-            padding-top: 50px;
-            font-size: 40px;
-            padding-left:100px; 
-            font-weight:300px;
+        h3 {
+            font-size: 24px; /* Adjusting font size */
+            padding-top: 20px; /* Adjusting padding */
+            color: #1EFF34;
             text-transform: uppercase;
             letter-spacing: 1px;
-            display: inline-block;
-            color: #1EFF34;
         }
-        .ballons{
-            animation-name: ballons;
-            animation-duration: 2.5s;
-            animation-fill-mode: forwards;
-            animation-delay: 1s;
-            animation-timing-function: ease-in-out;
-        }      
-        .ballons1{
-            animation-name: ballons;
-            animation-duration: 2.5s;
-            animation-fill-mode: forwards;
-            animation-delay: 1s;
-            animation-timing-function: ease-in-out;
-        }      
-        .ballons2{
-            animation-name: ballons2;
-            animation-duration: 2.5s;
-            animation-fill-mode: forwards;
-            animation-delay: 2s;
-            animation-timing-function: ease-in-out;
-        }   
-        @keyframes main{
-            from{
-                transform:translateY(1000px)
-            }
-            to{
-                transform:translateY(-80px)
-            }
-        }
-        @keyframes ballons{
-            from{
-                transform:translateY(100px)
-            }
-            to{
-                transform:translateY(-1530px)
-            }
-        }
-        @keyframes ballons2{
-            from{
-                transform:translateY(100px)
-            }
-            to{
-                transform:translateY(-1600px)
-            }
-        }
-        @keyframes cake{
-            from{
-                opacity:20;
-            }
-            to{
-                opacity: 100
-            }
-        }
-        .next{
-            height: 100px;
+        .next {
+            display: block;
+            margin: 20px auto; /* Centering the button */
             width: 100px;
-            padding-left:550px; 
+            height: 100px;
             background-color: white;
-            border-color: white;
-            padding-right:550px;
+            border: none;
+            border-radius: 50%; /* Making it circular */
+            color: #1EFF34;
+            font-size: 18px;
+            text-align: center;
+            line-height: 100px; /* Centering text vertically */
+            text-decoration: none; /* Removing underline */
+            transition: background-color 0.3s, color 0.3s;
         }
-        .ballons1{
-            animation-name: ballons;
-            animation-duration: 2.5s;
-            animation-fill-mode: forwards;
-            animation-delay: 1s;
-            animation-timing-function: ease-in-out;
+        .next:hover {
+            background-color: #1EFF34;
+            color: white;
         }
-        </style>
-    </head>
-    <body><div id="full">
-        <div class ="main">
-       
-           <a href="second page.html">
-            <img src="https://media.tenor.com/S0JGPOR2G74AAAAi/tantan-lamronspace.gif" class="cake"></a>
-        </div></div>
-        </a>
-    </body>
+        @keyframes main {
+            from {
+                transform: translateY(1000px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        @keyframes cake {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="full">
+        <div class="main">
+            <a href="second page.html">
+                <img src="https://media.tenor.com/S0JGPOR2G74AAAAi/tantan-lamronspace.gif"  class="cake">
+            </a>
+
+        </div>
+    </div>
+</body>
 </html>
