@@ -4,70 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Party Celebration</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('https://media.tenor.com/hO5LurgYddYAAAAi/party-balloons.gif');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            font-family: Arial, sans-serif; /* Common font for better compatibility */
-        }
-        .main {
-            padding-top: 10%;
-            text-align: center;
-            animation: main 2.5s ease-in-out forwards;
-        }
-        .cake {
-            width: 100%; /* Ensure the cake image takes full width */
-            max-width: 900px; /* Limit maximum width of the cake */
-            height: auto; /* Maintain aspect ratio */
-            animation: cake 2.5s ease-in-out forwards;
-        }
-        h3 {
-            font-size: 24px; /* Adjusting font size */
-            padding-top: 20px; /* Adjusting padding */
-            color: #1EFF34;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .next {
-            display: block;
-            margin: 20px auto; /* Centering the button */
-            width: 100px;
-            height: 100px;
-            background-color: white;
-            border: none;
-            border-radius: 50%; /* Making it circular */
-            color: #1EFF34;
-            font-size: 18px;
-            text-align: center;
-            line-height: 100px; /* Centering text vertically */
-            text-decoration: none; /* Removing underline */
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .next:hover {
-            background-color: #1EFF34;
-            color: white;
-        }
-        @keyframes main {
-            from {
-                transform: translateY(1000px);
-            }
-            to {
-                transform: translateY(0);
-            }
-        }
-        @keyframes cake {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="cake.css">
+    
 </head>
 <body>
     <div id="full">
