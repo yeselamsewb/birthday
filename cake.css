@@ -18,32 +18,7 @@
             height: auto; 
             animation: cake 3s ease-in-out forwards;
         }
-        h3 {
-            font-size: 24px; 
-            padding-top: 20px;
-            color: #1EFF34;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .next {
-            display: block;
-            margin: 20px auto; 
-            width: 100px;
-            height: 100px;
-            background-color: white;
-            border: none;
-            border-radius: 50%; 
-            color: #1EFF34;
-            font-size: 18px;
-            text-align: center;
-            line-height: 100px; 
-            text-decoration: none; 
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .next:hover {
-            background-color: #1EFF34;
-            color: white;
-        }
+       
         @keyframes main {
             from {
                 transform: translateY(1000px);
