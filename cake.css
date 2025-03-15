@@ -1,0 +1,62 @@
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://media.tenor.com/hO5LurgYddYAAAAi/party-balloons.gif');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif; 
+        }
+        .main {
+            padding-top: 2%;
+            text-align: center;
+            animation: main 3s ease-in-out forwards;
+        }
+        .cake {
+            width: 100%; 
+            max-width: 900px;
+            height: auto; 
+            animation: cake 3s ease-in-out forwards;
+        }
+        h3 {
+            font-size: 24px; 
+            padding-top: 20px;
+            color: #1EFF34;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .next {
+            display: block;
+            margin: 20px auto; 
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border: none;
+            border-radius: 50%; 
+            color: #1EFF34;
+            font-size: 18px;
+            text-align: center;
+            line-height: 100px; 
+            text-decoration: none; 
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .next:hover {
+            background-color: #1EFF34;
+            color: white;
+        }
+        @keyframes main {
+            from {
+                transform: translateY(1000px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        @keyframes cake {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
